@@ -84,6 +84,7 @@
 
 # 자료
 
+- 우리는 어떻게 Streaming 을 하는가? [Spotify 기술 블로그](https://engineering.atspotify.com/2018/08/31/smoother-streaming-with-bbr/)
 - MultipartFile [Java Docs](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/multipart/MultipartFile.html)
 - Java Swing 으로 Music Player 만들기 [tistory](https://aristatait.tistory.com/17)
 - How to Make a GUI Music Player In Java [youtube](https://www.youtube.com/watch?v=OX3CFHLV9ws)
