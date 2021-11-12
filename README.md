@@ -24,6 +24,16 @@
           - BBR : google 이 개발한 TCP Congestion 제어 알고리즘
             - 더 빠른 data 전송을 위해 개발됨
             - 우리의 프로젝트 목표는 객체지향을 더 잘 느낄 수 있는 프로젝트를 하기 위함이라 건너띄기, 일시정지 와 같은 행동에 대한 고민은 하지 않을 것
+    - _스트리밍 서비스 종류_
+      - Progressive Download
+        - Youtube 에서 사용되는 비디오 전송 방식
+        - url 을 통해서 파일을 접근하여 파일을 순차적으로 다운로드하고 다운로드 된 부분만 재생
+        - 일정 양을 다운받을 때까지 멈춰있을 수 있음
+      - RTSP/RTMP Streaming
+        - 데이터를 다운받지 않음
+        - 비디오 프레임만 넘겨주고 이미 시청한 데이터를 버림
+      - Adaptive HTTP Streaming
+        - Pregressive + RTSP/RTMP
     - 분석 결과
       - Melon 과 Spotify 의 공통점인 HTTP 통신으로 음악 file 을 stream 화 하여 stream 전송을 한다
       - 보다 객체지향적인 파트인 사용자 회원가입, 로그인, 음악 file의 Stream 제어, 플레이리스트에 집중하려 함
