@@ -34,6 +34,7 @@
         - 비디오 프레임만 넘겨주고 이미 시청한 데이터를 버림
       - Adaptive HTTP Streaming
         - Pregressive + RTSP/RTMP
+        - 서버에서 몇 초 단위의 비디오를 가지고
     - 분석 결과
       - Melon 과 Spotify 의 공통점인 HTTP 통신으로 음악 file 을 stream 화 하여 stream 전송을 한다
       - 보다 객체지향적인 파트인 사용자 회원가입, 로그인, 음악 file의 Stream 제어, 플레이리스트에 집중하려 함
