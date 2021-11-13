@@ -8,16 +8,15 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        MusicByPlayer player = new MusicByPlayer(true);
-
-        // clip.play();
         HTTPRequest request = new HTTPRequest();
 
-        InputStream response = request.get();
+        InputStream responseInputStream = request.get();
 
-        // MusicByClip clip = new MusicByClip(response);
-        // clip.play();
+        File file = FileConverter.convertInputStreamToFile(responseInputStream);
 
-        InputStream string = request.getString();
+        MusicByClip player = new MusicByClip(file);
+        player.play();
+
+        while(true);
     }
 }

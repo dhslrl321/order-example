@@ -47,7 +47,10 @@
     - 회원 가입, 로그인
     - 음악 재생
     - 음악 저장
+    - 전체 음악 조회 (Top 100)
   - 요구사항 분석
+    - RID-001 : 회원가입
+    - RID-002 : 로그인
   - 기타
     - UI Wireframe
       - Kakao Oven
@@ -62,6 +65,7 @@
 - **설계**
   - _UI 설계_
     - Kakao Oven
+    - User Story - Story Card 보여드리기
   - _시스템 아키텍쳐_
     - 3 tier 아키텍쳐 (front-back-db)
       - front-back : HTTP

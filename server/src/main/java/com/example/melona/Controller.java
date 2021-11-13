@@ -23,7 +23,7 @@ public class Controller {
     @GetMapping("/music")
     public ResponseEntity downloadImg(HttpServletResponse response) throws Exception {
         String musicDir = System.getProperty("user.dir") + "/music/";
-        String filename = "music1.mp3";
+        String filename = "music3.wav";
 
         Path filePath = Paths.get(musicDir + filename);
         Resource resource = new InputStreamResource(Files.newInputStream(filePath)); // 파일 resource 얻기

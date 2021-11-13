@@ -26,17 +26,7 @@ public class HTTPRequest {
             URL url = new URL("http://localhost:8080/music");
             http = (HttpURLConnection) url.openConnection();
             http.setRequestMethod("GET");
-            InputStream inputStream = http.getInputStream();
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(http.getInputStream()));
-            StringBuilder sb = new StringBuilder();
-            String line = "";
-            while ((line = br.readLine()) != null) {
-                sb.append(line);
-            }
-            System.out.println(sb.toString());
-
-            return inputStream;
+            return http.getInputStream();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
