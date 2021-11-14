@@ -1,5 +1,6 @@
 package com.example.melona;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -36,13 +37,8 @@ public class Controller {
         return new ResponseEntity(resource, headers, HttpStatus.OK);
     }
 
-    @GetMapping("/string")
-    public ResponseEntity<Map<String, String>> simple() {
-
-        Map<String, String> map = new HashMap<>();
-
-        map.put("message", "hello");
-
-        return ResponseEntity.ok(map);
+    @GetMapping("/message")
+    public ResponseEntity<Dto> simple() {
+        return ResponseEntity.ok(new Dto("jang", 12));
     }
 }

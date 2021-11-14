@@ -1,3 +1,5 @@
+import converter.InputStreamConverter;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -10,13 +12,12 @@ public class Main {
     public static void main(String[] args) throws Exception {
         HTTPRequest request = new HTTPRequest();
 
-        InputStream responseInputStream = request.get();
+        String message = request.getMessage();
+        System.out.println(message);
 
-        File file = FileConverter.convertInputStreamToFile(responseInputStream);
-
+        /*File file = FileConverter.convertInputStreamToFile(responseInputStream);
         MusicByClip player = new MusicByClip(file);
         player.play();
-
-        while(true);
+        while(true);*/
     }
 }

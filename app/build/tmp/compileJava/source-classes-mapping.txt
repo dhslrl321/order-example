@@ -1,9 +1,9 @@
-MusicByPlayer.java
- MusicByPlayer
 MusicByClip.java
  MusicByClip
-FileConverter.java
- FileConverter
+MusicByPlayer.java
+ MusicByPlayer
+converter/InputStreamConverter.java
+ converter.InputStreamConverter
 Main.java
  Main
 HTTPRequest.java

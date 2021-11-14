@@ -43,6 +43,15 @@
     - 장원익(16) : Backend - Java Spring Boot
     - 한진규(20) : Frontend - Java Swing
 - **기획**
+  - 협업 방법
+    - Code의 Version Control : Git
+    - 일정 관리 : Github Kanban
+    - Issue Tracking : Github Issue
+  - 개발 방법론
+    - 폭포수 모델
+  - 음악 file
+    - sound cloud
+- **설계**
   - 기능 명세
     - 회원 가입, 로그인
     - 음악 재생
@@ -54,15 +63,6 @@
   - 기타
     - UI Wireframe
       - Kakao Oven
-    - 협업 방법
-      - Code의 Version Control : Git
-      - 일정 관리 : Github Kanban
-      - Issue Tracking : Github Issue
-    - 개발 방법론
-      - 폭포수 모델
-    - 음악 file
-      - sound cloud
-- **설계**
   - _UI 설계_
     - Kakao Oven
     - User Story - Story Card 보여드리기
@@ -96,6 +96,18 @@
 - **앞으로의 계획**
   - 일정
     - WBS 로 설명
+      - 프로젝트 방향성 회의
+        - 기획
+        - 현행 서비스 조사
+      - 기술 조사 및 선정
+        - 기능 명세
+      - 협업 방법 선정
+      - 요구사항 명세
+      - UI 설계
+      - 도메인 모델링
+      - DB 설계
+      - API 설계
+    - 개발
 
 # 자료
 
