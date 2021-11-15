@@ -1,21 +1,15 @@
 package com.example.melona.service;
 
-import com.example.melona.domain.dto.response.MusicResponseData;
 import com.example.melona.domain.entity.Music;
 import com.example.melona.domain.exception.NotFoundException;
 import com.example.melona.domain.repository.MusicRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
-import org.springframework.http.ContentDisposition;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.File;
 import java.net.MalformedURLException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 

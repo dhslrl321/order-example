@@ -1,3 +1,5 @@
+package player;
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -25,7 +27,7 @@ public class MusicByClip {
             clip = AudioSystem.getClip();
             clip.open(ais);
         } catch (Exception e) {
-            System.out.println(e.getMessage() + " MusicByClip 생성자");
+            System.out.println(e.getMessage() + " player.MusicByClip 생성자");
         }
     }
 
