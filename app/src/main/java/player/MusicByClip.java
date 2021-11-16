@@ -1,3 +1,5 @@
+package player;
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -19,14 +21,13 @@ public class MusicByClip {
         }
     }
 
-    public MusicByClip(InputStream inputStream) {
+    public MusicByClip(File file) {
         try {
-            AudioInputStream ais = AudioSystem.getAudioInputStream(inputStream);
-
+            AudioInputStream ais = AudioSystem.getAudioInputStream(file);
             clip = AudioSystem.getClip();
             clip.open(ais);
         } catch (Exception e) {
-            System.out.println(e.getMessage() + " MusicByClip 생성자");
+            System.out.println(e.getMessage() + " player.MusicByClip 생성자");
         }
     }
 
@@ -34,6 +35,7 @@ public class MusicByClip {
         clip.setFramePosition(0);
         clip.start();
     }
+
     public void loop() {
         clip.loop(Clip.LOOP_CONTINUOUSLY);
     }

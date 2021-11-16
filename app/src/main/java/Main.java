@@ -1,23 +1,22 @@
-import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.http.HttpRequest;
-import java.nio.charset.StandardCharsets;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import http.HTTPRequest;
+import player.MusicByClip;
+import presenter.MainFrame;
+
+import java.io.File;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        MusicByPlayer player = new MusicByPlayer(true);
 
-        // clip.play();
-        HTTPRequest request = new HTTPRequest();
+        new MainFrame();
 
-        InputStream response = request.get();
+        /*HTTPRequest request = new HTTPRequest();
 
-        // MusicByClip clip = new MusicByClip(response);
-        // clip.play();
+        File file = request.fetchMusicStream(1L);
 
-        InputStream string = request.getString();
+        MusicByClip player = new MusicByClip(file);
+
+        player.play();
+
+        while(true);*/
     }
 }

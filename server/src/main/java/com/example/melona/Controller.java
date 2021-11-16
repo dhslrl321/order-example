@@ -1,5 +1,6 @@
 package com.example.melona;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -23,7 +24,7 @@ public class Controller {
     @GetMapping("/music")
     public ResponseEntity downloadImg(HttpServletResponse response) throws Exception {
         String musicDir = System.getProperty("user.dir") + "/music/";
-        String filename = "music1.mp3";
+        String filename = "music3.wav";
 
         Path filePath = Paths.get(musicDir + filename);
         Resource resource = new InputStreamResource(Files.newInputStream(filePath)); // 파일 resource 얻기
@@ -36,13 +37,8 @@ public class Controller {
         return new ResponseEntity(resource, headers, HttpStatus.OK);
     }
 
-    @GetMapping("/string")
-    public ResponseEntity<Map<String, String>> simple() {
-
-        Map<String, String> map = new HashMap<>();
-
-        map.put("message", "hello");
-
-        return ResponseEntity.ok(map);
+    @GetMapping("/message")
+    public ResponseEntity<Dto> simple() {
+        return ResponseEntity.ok(new Dto("jang", 12));
     }
 }
