@@ -2,6 +2,8 @@ package presenter;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
+import javax.swing.event.*;
 
 public class MainFrame extends JFrame {
 
@@ -45,5 +47,29 @@ public class MainFrame extends JFrame {
 
         setSize(400, 400);
         setVisible(true);
+        setResizable(false);
+
+        register.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Register();
+                setVisible(false);
+            }
+        });
+
+        login.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(id.getText().equals("gkswlsrb")) {
+
+                        new MainDisplay();
+                        setVisible(false);
+
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "아이디와 비밀번호를 정확히 입력해 주세요.");
+                }
+                }
+            });
     }
 }

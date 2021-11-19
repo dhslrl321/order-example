@@ -2,6 +2,8 @@ package presenter;
 
 import java.awt.*;
 import javax.swing.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class Register extends JFrame{
 
@@ -28,7 +30,7 @@ public class Register extends JFrame{
 
         JLabel rPwLabel = new JLabel("비밀번호");
         rPwLabel.setFont(new Font("맑은 고딕", Font.BOLD, 16));
-        rPwLabel.setBounds(153, 120, 100, 50);
+        rPwLabel.setBounds(153, 130, 100, 30);
         c.add(rPwLabel);
 
         JPasswordField rPw = new JPasswordField();
@@ -46,9 +48,25 @@ public class Register extends JFrame{
 
         JButton done = new JButton("완료");
         done.setBounds(140, 280, 100, 30);
+        done.setEnabled(true);
         c.add(done);
 
         setSize(400, 400);
         setVisible(true);
+        setResizable(false);
+
+        done.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(rId.getText().isBlank() || rPw.getText().isBlank() || name.getText().isBlank()){
+                    JOptionPane.showMessageDialog(null, "회원가입에 실패하였습니다.");
+                    return;
+                }
+                JOptionPane.showMessageDialog(null, "회원가입에 성공하였습니다.");
+                new MainFrame();
+                setVisible(false);
+            }
+        });
+
     }
 }
