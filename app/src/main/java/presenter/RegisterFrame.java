@@ -3,11 +3,10 @@ package presenter;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import javax.swing.*;
 
-public class Register extends JFrame{
+public class RegisterFrame extends JFrame{
 
-    public Register(){
+    public RegisterFrame(){
         setTitle("회원가입");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -63,7 +62,7 @@ public class Register extends JFrame{
                     return;
                 }
                 JOptionPane.showMessageDialog(null, "회원가입에 성공하였습니다.");
-                new MainFrame();
+                new LoginFrame();
                 setVisible(false);
             }
         });

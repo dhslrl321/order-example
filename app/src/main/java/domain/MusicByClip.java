@@ -8,21 +8,7 @@ import java.io.InputStream;
 
 public class MusicByClip {
     private Clip clip;
-    private File musicFile;
-
-    public MusicByClip() {
-
-    }
-
-    public MusicByClip(File file) {
-        try {
-            AudioInputStream ais = AudioSystem.getAudioInputStream(file);
-            clip = AudioSystem.getClip();
-            clip.open(ais);
-        } catch (Exception e) {
-            System.out.println(e.getMessage() + " domain.MusicByClip 생성자");
-        }
-    }
+    private Long clipTime;
 
     public void switchMusic(Music music) {
         try {

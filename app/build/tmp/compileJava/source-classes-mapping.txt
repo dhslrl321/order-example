@@ -1,30 +1,19 @@
+presenter/MainDisplay.java
+ presenter.MainDisplay
 http/HTTPRequest.java
  http.HTTPRequest
+converter/InputStreamConverter.java
+ converter.InputStreamConverter
+domain/MusicByClip.java
+ domain.MusicByClip
+domain/Playlist.java
+ domain.Playlist
+domain/Music.java
+ domain.Music
 presenter/Register.java
  presenter.Register
  presenter.Register$1
-player/MusicByPlayer.java
- player.MusicByPlayer
-Test.java
- Test
-converter/InputStreamConverter.java
- converter.InputStreamConverter
 Main.java
  Main
-domain/Playlist.java
- domain.Playlist
-domain/MusicByClip.java
- domain.MusicByClip
-domain/Music.java
- domain.Music
-domain/User.java
- domain.User
-presenter/MainDisplay.java
- presenter.MainDisplay
- presenter.MainDisplay$1
- presenter.MainDisplay$2
- presenter.MainDisplay$3
-presenter/MainFrame.java
- presenter.MainFrame
- presenter.MainFrame$1
- presenter.MainFrame$2
+presenter/Login.java
+ presenter.Login
