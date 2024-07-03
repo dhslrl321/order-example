@@ -1,13 +1,11 @@
-package com.github.dhslrl321.payment
+package com.github.dhslrl321.order
 
-import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
+import kotlin.test.Test
 
 @SpringBootTest
-class PaymentApplicationTests {
-
+class OrderApiApplicationTest {
     @Test
     fun contextLoads() {
     }
-
 }
